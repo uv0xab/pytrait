@@ -29,6 +29,12 @@ class TraitHub:
         implemented methods and properties are accessible from the base
         class. """
 
+        if len(cls_impl.__bases__) != 2:
+            msg = "the trait implemention {cls_impl} should inherit " + \
+                f"exactly two base classes, {cls_impl.__bases__} found"
+
+            raise TypeError(msg)
+
         cls_base = TraitHub.__get_base_class(cls_impl)
         cls_trait = TraitHub.__get_trait_class(cls_impl)
 
