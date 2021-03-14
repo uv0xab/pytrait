@@ -2,8 +2,11 @@ pytrait
 =======
 
 The project aims to support the *trait* approach to extend classes
-while do not hijack into their definitions. Besides, it should be
-type-checkable under modern python3 type checkers, e.g. mypy.
+while do not hijack into their definitions.
+
+We plan to make the this extension fully type-checkable under modern
+python3 type checkers, e.g. mypy. Unfortunately this is still under
+development.
 
 Installation
 ------------
